@@ -1,7 +1,4 @@
-const matrix = 
-         [[0, 1, 1, 2], 
-          [0, 5, 0, 0], 
-          [2, 0, 3, 3]];
+// https://app.codesignal.com/arcade/intro/level-2/xskq4ZxLyqQMCLshr
 
 function solution(matrix) {
     let sum = 0;
@@ -20,5 +17,3 @@ function solution(matrix) {
     }
     return sum;
 }
-
-console.log(solution(matrix));
