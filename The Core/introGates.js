@@ -30,3 +30,19 @@ function solution(n, m) {
 }
 
 //seats in theater
+function solution(nCols, nRows, col, row) {
+    return (nRows - row) * (nCols - col + 1);
+}
+
+//max multiple
+function solution(divisor, bound) {
+    let largestInteger = 1;
+    for (let i = 1; i <= bound; i++) {
+        if (i % divisor === 0) {
+            largestInteger = i;
+        }
+    }
+    return largestInteger;
+}
+
+//circle of numbers
