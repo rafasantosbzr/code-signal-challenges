@@ -46,3 +46,23 @@ function solution(divisor, bound) {
 }
 
 //circle of numbers
+function solution(n, firstNumber) {
+    return (firstNumber + n / 2) % n;
+}
+
+//late ride
+function solution(n) {
+    var hour = Math.floor(n/60);
+    var minute  = n%60; 
+    if (n < 60) {
+        return sum(n);
+    } else {
+        return sum(hour) + sum(minute);
+    }
+        
+    function sum(a) {
+        return a%10 + Math.floor(a/10);
+    }
+}
+
+//phone call
