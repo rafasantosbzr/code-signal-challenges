@@ -33,3 +33,16 @@ function solution(value1, weight1, value2, weight2, maxW) {
     }   
     return maxV;
 }
+
+//extra number
+function solution(a, b, c) {
+    const arr = [a, b, c];
+    
+    const ordenedArr = arr.sort((a, b) => a - b);
+    
+    if (ordenedArr[2] > ordenedArr[1]) {
+        return ordenedArr[2];
+    } else {
+        return ordenedArr[0];
+    }
+}
